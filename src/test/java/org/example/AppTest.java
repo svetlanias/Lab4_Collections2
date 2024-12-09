@@ -14,7 +14,6 @@ public class AppTest {
 
     /**
      * тест метода readCSV, осуществляющий чтение из CSV файла и построчно сохраняющий информацию в список
-     * @throws IOException если происходит ошибка ввода-вывода при чтении CSV файла
      */
     @Test
     public void readCSVTest()
