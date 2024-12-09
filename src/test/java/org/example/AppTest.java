@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
+ *
  * класс, тестирующий корректность работы класса App
  */
 public class AppTest {
