@@ -20,7 +20,7 @@ public class AppTest {
     public void readCSVTest() throws IOException
     {
         LinkedList<Person> personsInformation=new LinkedList<>();
-        personsInformation = App.readCSV(personsInformation);
+        App.readCSV(personsInformation);
         assertEquals(25898,personsInformation.size());
     }
 }
