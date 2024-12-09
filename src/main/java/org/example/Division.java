@@ -8,7 +8,7 @@ public class Division {
     /**
      * поле с ID подразделения
      */
-    private final Integer id;
+    private final int id;
 
     /**
      * поле с названием подразделения
@@ -20,7 +20,7 @@ public class Division {
      * @param divID ID подразделения
      * @param divName название подразделения
      */
-    Division(Integer divID, String divName)
+    Division(int divID, String divName)
     {
         id=divID;
         name=divName;
