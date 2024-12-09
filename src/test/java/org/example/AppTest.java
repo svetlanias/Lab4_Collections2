@@ -19,7 +19,8 @@ public class AppTest {
     @Test
     public void readCSVTest() throws IOException
     {
-        LinkedList<Person> personsInformation = App.readCSV();
+        LinkedList<Person> personsInformation=new LinkedList<>();
+        personsInformation = App.readCSV(personsInformation);
         assertEquals(25898,personsInformation.size());
     }
 }

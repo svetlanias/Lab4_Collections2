@@ -16,9 +16,8 @@ import java.io.IOException;
 
 public class App
 {
-    public static LinkedList<Person> readCSV() throws IOException {
+    public static LinkedList<Person> readCSV(LinkedList<Person> personsInformation) {
 
-        LinkedList<Person> personsInformation = new LinkedList<>();
         String csvFilePath = "foreign_names.csv";
         char separator = ';';
 
@@ -44,9 +43,15 @@ public class App
                 personsInformation.add(person);
                 ident++;
             }
-        } catch (CsvValidationException e) {
+        } catch (IOException | CsvValidationException e) {
             throw new RuntimeException(e);
         }
         return personsInformation;
+    }
+
+    public static void main(String[] args)
+    {
+        LinkedList<Person> personsInformation = new LinkedList<>();
+        System.out.println(readCSV(personsInformation));
     }
 }

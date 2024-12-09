@@ -8,7 +8,7 @@ public class Person {
     /**
      * поле ID человека
      */
-    private final Integer id;
+    private final int id;
 
     /**
      * поле с именем человека
@@ -33,7 +33,7 @@ public class Person {
     /**
      * поле с зарплатой человека
      */
-    private final Integer salary;
+    private final int salary;
 
     /**
      * конструктор класса Person
@@ -45,7 +45,7 @@ public class Person {
      * @param divID ID подразделения
      * @param personSalary зарплата
      */
-    Person(Integer personID, String personNmae,String personGender,String personBirtDay,String divName,Integer divID,Integer personSalary)
+    Person(int personID, String personNmae,String personGender,String personBirtDay,String divName,int divID,int personSalary)
     {
         id=personID;
         name=personNmae;
