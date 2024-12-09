@@ -17,7 +17,7 @@ public class AppTest {
      * @throws IOException если происходит ошибка ввода-вывода при чтении CSV файла
      */
     @Test
-    public void readCSVTest() throws IOException
+    public void readCSVTest()
     {
         LinkedList<Person> personsInformation=new LinkedList<>();
         App.readCSV(personsInformation);
